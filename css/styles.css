@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    background-color: #181818;
+    color: white;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form{
+    width: 55%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form input{
+    height: 25px;
+    margin-bottom: 25px;
+    padding: 5px;
+    color: white;
+    background-color: #121212;
+    border: none;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.form button{
+    width: 100%;
+    min-width: 320px;
+    height: 35px;
+    font-size: 1.5rem;
+    border: none;
+    color: white;
+    background-color: #0791E6;
+}
+
+.form button:active{
+    box-shadow: 5px 5px 25px 1px rgba(0,0,0,0.51) inset;
+}
+
+.contacts{
+    width: 55%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacts__contact{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) repeat(2, 0.2fr);
+}
+
+.contacts__contact.title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-bottom: 2px solid #757575;
+}
+
+.contacts__contact.title p{
+    margin-bottom: 0;
+}
+
+.contacts span{
+    justify-self: center;
+    align-self: center;
+}
+
+.contacts span.delete {
+    color: tomato;
+}
+
+.contacts span.edit {
+    color: #a3a3a3;
+}
+
+.contacts span:hover, .form button:hover{
+    cursor: pointer;
+}
+
+.swal2-popup{
+    background-color: #181818;
+}
+
+.swal2-title, .swal2-html-container{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+.swal2-confirm.swal2-styled{
+    background-color: #0791E6;
+}
+
+.swal2-styled.swal2-confirm:focus{
+    box-shadow: none;
+}
